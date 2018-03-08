@@ -252,7 +252,7 @@ eval("\n\nvar env = \"development\" || 'development';\n\nif (env === 'developmen
 /*! exports provided: test, development, default */
 /***/ (function(module) {
 
-eval("module.exports = {\"test\":{\"PORT\":4000,\"WEATHER_API_KEY\":\"166d00e26d3ff2c6149e89feccc5c59a\"},\"development\":{\"PORT\":4000,\"WEATHER_API_KEY\":\"166d00e26d3ff2c6149e89feccc5c59a\"}};\n\n//# sourceURL=webpack:///./server/config/config.json?");
+eval("module.exports = {\"test\":{\"PORT\":4000,\"WEATHER_API_KEY\":\"\"},\"development\":{\"PORT\":4000,\"WEATHER_API_KEY\":\"\"}};\n\n//# sourceURL=webpack:///./server/config/config.json?");
 
 /***/ }),
 
