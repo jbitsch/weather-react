@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Weather widget</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!--WARNING: See the following for security issues around embedding JSON in HTML:
+    http://redux.js.org/recipes/ServerRendering.html#security-considerations -->
+    <script>window.__INITIAL_DATA__=<%- data -%></script>
+    <script>window.__APOLLO_STATE__=<%- apolloState -%></script>
+</head>
+<body>
+<div id="main"><%- markup -%></div>
+<script src="/js/bundle.js"></script>
+</body>
+</html>

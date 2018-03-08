@@ -1,0 +1,10 @@
+{
+  "test": {
+    "PORT": 4000,
+    "WEATHER_API_KEY" : ""
+  },
+  "development": {
+    "PORT": 4000,
+    "WEATHER_API_KEY" : ""
+  }
+}
