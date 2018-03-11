@@ -16,17 +16,16 @@ const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX
 const storeState = window.__INITIAL_DATA__;
 delete window.__INITIAL_DATA__;
 
-const apploState = window.__APOLLO_STATE__;
+const apolloState = window.__APOLLO_STATE__;
 delete window.__APOLLO_STATE__;
 
 
-const store = createStore(weatherReducer,storeState, composeEnhancers(
-  applyMiddleware(thunk)
-));
+//const store = createStore(weatherReducer,storeState, composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(weatherReducer,storeState, applyMiddleware(thunk));
 
 const client = new ApolloClient({
   link: new HttpLink(),
-  cache: new InMemoryCache().restore(apploState)
+  cache: new InMemoryCache().restore(apolloState)
 });
 
 hydrate(
